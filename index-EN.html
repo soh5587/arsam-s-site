@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Arsam's Personal Website</title>
+    <!--meta tag-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--style-->
+    <link href="style.css" rel="stylesheet">
+    <!--bootstrap css-->
+    <link href="bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--fontawesome css-->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <!--favicon-->
+    <link href="photo/icon/favicon.png" rel="icon">
+    <!--swiper css-->
+    <link href="Swiperjs/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+</head>
+
+
+<body dir="ltr">
+    <section class="container mt-4 mb-4">
+        <div class="row">
+
+            <!----sidebar / Sidebar---->
+            <div class="sidebar d-none d-md-block col-md-2 m-2 p-0">
+
+                <!--img / Image-->
+
+                <!--navbar / Navigation Bar-->
+                <div class="navbar-div mb-3">
+                    <div class="img-div mb-3">
+                        <img src="photo/user.jpg" width="100%">
+                    </div>
+
+                    <ul>
+                        <div class="d-flex div-menu active-menu" onclick="activePage('#about')">
+                            <i class="fa fa-user"></i>
+                            <li> About Me </li>
+                        </div>
+                        <div class="d-flex div-menu" onclick="activePage('#resume')">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <li> My Resume </li>
+                        </div>
+                        <div class="d-flex div-menu" onclick="activePage('#service')">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <li> Services </li>
+                        </div>
+
+                        <div class="d-flex first-child-li div-menu" onclick="activePage('#call')">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <li> Contact Me </li>
+                        </div>
+
+                    </ul>
+                </div>
+
+                <!----setting / Settings---->
+                <div class="setting-div">
+
+                    <ul>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="d-flex collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne">
+                                <div>
+                                    <i class="fa fa-gear"></i>
+                                </div>
+                                <li> Settings </li>
+                                <i class="fa-solid fa-angle-down down-up-d"></i>
+                            </div>
+                        </div>
+
+                        <!--color / Color-->
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="d-flex accordion-body div-color">
+                                <li>
+                                    <p> Preset Colors </p>
+                                    <button class="button-color-style orange" value="orange"> </button>
+                                    <button class="button-color-style pink" value="pink"> </button>
+                                    <button class="button-color-style purple" value="purple"> </button>
+                                    <button class="button-color-style gold" value="gold"> </button>
+                                    <button class="button-color-style brown" value="brown"> </button>
+                                    <button class="button-color-style red" value="red"> </button>
+                                    <button class="button-color-style blue" value="blue"> </button>
+                                    <button class="button-color-style green" value="green"> </button>
+                                </li>
+                            </div>
+
+
+                            <div class="d-flex accordion-body div-color">
+                                <li>
+                                    <p> Custom Color </p>
+                                    <div class="d-flex mt-2 div-custom-color">
+                                        <p> Primary Color </p>
+                                        <input type="color" oninput="getColorCodeOne(this.value)"
+                                            class="custom-color-one" id="custom-color-one-d">
+                                    </div>
+                                    <div class="d-flex mt-2 div-custom-color">
+                                        <p> Secondary Color </p>
+                                        <input type="color" oninput="getColorCodeTwo(this.value)"
+                                            class="custom-color-two" id="custom-color-two-d">
+                                    </div>
+                                </li>
+                            </div>
+
+                            <!--font / Font-->
+                            <div class="accordion-body div-color">
+
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Title Font
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><button class="dropdown-item title" value="vazir"
+                                                style="font-family: Vazir !important;">
+                                                Vazir </button></li>
+                                        <li><button class="dropdown-item title" value="Estedad"
+                                                style="font-family: Estedad !important;">
+                                                Estedad </button></li>
+                                        <li><button class="dropdown-item title" value="IranSans"
+                                                style="font-family: IranSans !important;"> IranSans </button></li>
+                                        <li><button class="dropdown-item title" value="Lalezar"
+                                                style="font-family: Lalezar !important;">
+                                                Lalezar </button></li>
+                                        <li><button class="dropdown-item title" value="titr"
+                                                style="font-family: titr !important;">
+                                                Titr </button></li>
+                                        <li><button class="dropdown-item title" value="yekan"
+                                                style="font-family: Yekan !important;">
+                                                Yekan </button></li>
+                                        <li><button class="dropdown-item title" value="Shabnam"
+                                                style="font-family: Shabnam !important;"> Shabnam </button></li>
+                                        <li><button class="dropdown-item title" value="Sahel"
+                                                style="font-family: Sahel !important;">
+                                                Sahel </button></li>
+                                        <li><button class="dropdown-item title" value="Tanha"
+                                                style="font-family: Tanha !important;">
+                                                Tanha </button></li>
+                                        <li><button class="dropdown-item title" value="Samim"
+                                                style="font-family: Samim !important;">
+                                                Samim </button></li>
+                                        <li><button class="dropdown-item title" value="Rezvan"
+                                                style="font-family: Rezvan !important;">
+                                                Rezvan </button></li>
+                                    
+                                    </ul>
+
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Text Font
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><button class="dropdown-item text" value="vazir"
+                                                style="font-family: Vazir !important;">
+                                                Vazir </button></li>
+                                        <li><button class="dropdown-item text" value="Estedad"
+                                                style="font-family: Estedad !important;">
+                                                Estedad  </button></li>
+                                        <li><button class="dropdown-item text" value="IranSans"
+                                                style="font-family: IranSans !important;"> IranSans </button></li>
+                                        <li><button class="dropdown-item text" value="Lalezar"
+                                                style="font-family: Lalezar !important;">
+                                                Lalezar </button></li>
+                                        <li><button class="dropdown-item text" value="titr"
+                                                style="font-family: titr !important;">
+                                                Titr </button></li>
+                                        <li><button class="dropdown-item text" value="yekan"
+                                                style="font-family: Yekan !important;">
+                                                Yekan </button></li>
+                                        <li><button class="dropdown-item text" value="Shabnam"
+                                                style="font-family: Shabnam !important;"> Shabnam </button></li>
+                                        <li><button class="dropdown-item text" value="Sahel"
+                                                style="font-family: Sahel !important;">
+                                                Sahel </button></li>
+                                        <li><button class="dropdown-item text" value="Tanha"
+                                                style="font-family: Tanha !important;">
+                                                Tanha </button></li>
+                                        <li><button class="dropdown-item text" value="Samim"
+                                                style="font-family: Samim !important;">
+                                                Samim </button></li>
+                                        <li><button class="dropdown-item text" value="Rezvan"
+                                                style="font-family: Rezvan !important;">
+                                                Rezvan </button></li>
+                                                          
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-body div-color" style="border-bottom:none;">
+                                <button class="reset-settings"> Reset Settings </button>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!--page / Page -->
+            <div class="page col m-2">
+
+
+                <!--header / Header-->
+                <div class="header mb-3">
+                    <div class="row">
+
+                        <div class="col-12 col-lg-7 mb-3 mb-lg-0 name">
+                            <div class="row">
+                                <div class="col-8 w-auto">
+                                    <h1>Arsam Jabbarzadeh</h1>
+                                </div>
+                                <div class="col-4 w-auto mt-2 p-0">
+                                    <span class="job"> Web Developer </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 network">
+                            <div class="row">
+                                <div class="col-7">
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-github"></i></a>
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+<a href="#"><i class="fa-brands fa-telegram"></i></a>
+
+                                </div>
+                                <div class="col-5 div-resume-link Rtl-Ltr">
+                                    <div class="p-1 div-night">
+                                        <i class="fa-solid fa-sun"></i>
+                                    </div>
+
+                                    <div class="p-1 language">
+                                        <a href="index.html"> <i class="fa-solid fa-earth-americas RTL-E"></i> </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--about me / About Me-->
+                <div class="about-me page-child active" id="about">
+
+                    <div class="row row-background-image">
+                        <div class="col-12 div-background-image">
+                            <img src="photo/bg-image.png" alt="#">
+
+                            <div class="div-about-me mt-4 mt-md-0">
+                                <h2> <span id="fixed-word"> </span> <span id="typing-text"> </span> </h2>
+                                <p id="typing-text-p"> I am proficient in several programming languages and website design, and I am currently learning artificial intelligence.
+                                    
+                                </p>
+
+                                <a href="tel:099355555" class="call-me"> Contact Me </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+
+                        <div class="col-12 mt-4 mt-md-0">
+
+                            <div class="row mt-4">
+                                <div class="about">
+<h2> About <b> Me </b> </h2>
+                                    <p> 
+                                        Hello! I am Arsam.
+I combine the worlds of design and coding. My specialty is creating digital experiences that are visually stunning and technically flawless. Currently, as I enter the field of artificial intelligence, I am working to redefine the future of the web, where beautiful design meets the computational power of AI.
+                                    </p>
+                                </div>
+
+                                <div class="title-pages mb-3">
+                                    <h2 class="mt-4"> Information <b> Basic </b> </h2>
+                                </div>
+
+                                <div class="col-12 col-md-6 about">
+                                    <ul>
+                                        <li>
+                                            Date of Birth: <span> 1394/06/26 </span>
+                                        </li>
+                                        <li>
+                                            Phone Number: <span> 09121234567 </span>
+                                        </li>
+                                        <li>
+                                            Location: <span> Qazvin , District3</span>
+                                        </li>
+                                        <li>
+                                            Email: <span> information@gmail.com </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-12 col-md-6 about">
+                                    <ul>
+                                        <li>
+                                            Education: <span> Sixth Grade</span>
+                                        </li>
+                                        <li>
+                                            Marital Status: <span> Single </span>
+                                        </li>
+                                        <li>
+                                            Website: <span> soh5587/github.io/arsam,s-site </span>
+                                        </li>
+                                        <li>
+                                            Status: <span> Available </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="row mt-4">
+
+                                    <div class="col-6 col-md about-number">
+                                        <div class="d-flex div-about-number">
+                                            <div>
+                                                <i class="fa-solid fa-list-check"></i>
+                                            </div>
+                                            <div>
+                                                <span class="counter"> 58 </span>
+                                            </div>
+                                        </div>
+                                        <p> Completed Projects </p>
+                                    </div>
+
+                                    <div class="col-6 col-md about-number">
+                                        <div class="d-flex div-about-number">
+                                            <div>
+                                                </i><i class="fa-solid fa-user-group"></i>
+                                            </div>
+                                            <div>
+                                                <span class="counter"> 47 </span>
+                                            </div>
+                                        </div>
+                                        <p> Satisfied Clients </p>
+                                    </div>
+
+                                    <div class="col-6 col-md about-number">
+                                        <div class="d-flex div-about-number">
+                                            <div>
+                                                <i class="fa-solid fa-medal"></i>
+                                            </div>
+                                            <div>
+                                                <span class="counter"> 4 </span>
+                                            </div>
+                                        </div>
+                                        <p> Awards Received </p>
+                                    </div>
+
+                                    <div class="col-6 col-md about-number">
+                                        <div class="d-flex div-about-number">
+                                            <div>
+                                                <i class="fa-solid fa-sitemap"></i>
+                                            </div>
+                                            <div>
+                                                <span class="counter"> 6 </span>
+                                            </div>
+                                        </div>
+                                        <p> Recognized Domains </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--my resume / My Resume-->
+                <div class="my-resume page-child" id="resume">
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-6">
+                            <h2> Background <b>Educational</b> </h2>
+
+                            <div class="div-resume mt-3">
+                                <h1>About My Learning Journey</h1>
+                                <span> 1405 - 1406 </span>
+                                <p> 
+Alongside my formal elementary education, I have focused primarily on deeply learning programming concepts and engineering sciences so that, while still being a student, I can take on international projects at a global level.
+                                 </p>
+                            </div>
+                            <div class="div-resume mt-3">
+                                <h3> Programming Certificate </h3>
+                                <span> 1404 - ∞ </span>
+                                <p> 
+                                    My professional journey in programming began in 1404. Looking to the future, my goal is to continuously improve my skills and keep up with technological developments throughout my professional career.
+                                 </p>
+                            </div>
+                            <div class="div-resume mt-3">
+                                <h3> Honorary Achievements </h3>
+                                <span> 1404 - 1406 </span>
+                                <p>
+                            🥇 🥇 Gold Medal in Invention | International Exhibition of Inventions and Innovations (IFIA), Geneva, Switzerland
+
+🥇 🥇 Gold Medal in Web Competition | Web Inovus Competition, United States
+
+🥈 🥈 Silver Medal in Ideation Competition | One Idea One World Competition, Turkey
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-3 mt-md-0">
+                            <h2> Background <b>Professional</b> </h2>
+
+                            <div class="div-resume mt-3">
+                                <h3> Programming </h3>
+                                <span> 1404 - ∞ </span>
+                                <p>
+                                   Freelance Programmer: Developing website design projects for independent clients with a focus on quality and efficiency.
+                                </p>
+                            </div>
+                            <div class="div-resume mt-3">
+                                <h3> Photoshop </h3>
+                                <span> 1404 - ∞ </span>
+                                <p>
+                                    I am familiar with graphic design principles and Adobe Photoshop, and I use this tool to enhance the visual appearance of web projects and design graphic elements.
+                                </p>
+                            </div>
+                            <div class="div-resume mt-3">
+                                <h3> SEO</h3>
+                                <span> 1405 - ∞ </span>
+                                <p>
+                                    Alongside my work in programming, I am currently taking specialized SEO courses. My goal is to design and build websites from the ground up that are not only technically flawless but also easily discoverable on Google.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-5">
+
+                        <div class="col-12 col-md-6 Skill">
+                            <h2> Skills <b>Design</b> </h2>
+
+                            <h6 class="mt-3"> Web Design </h6>
+                            <span class="Rtl-Ltr"> 90% </span>
+                            <div class="div-meter">
+                                <div style="width: 90%;"> </div>
+                            </div>
+
+                            <h6 class="mt-3"> Photoshop</h6>
+                            <span class="Rtl-Ltr"> 95% </span>
+                            <div class="div-meter">
+                                <div style="width: 95%;"> </div>
+                            </div>
+
+                            <h6 class="mt-3"> ui framework</h6>
+                            <span class="Rtl-Ltr"> 90% </span>
+                            <div class="div-meter">
+                                <div style="width: 90%;"> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-6 Skill mt-5 mt-md-0">
+                            <h2> Skills <b>Programming</b> </h2>
+
+                            <h6 class="mt-3"> HTML - CSS </h6>
+                            <span class="Rtl-Ltr"> 90% </span>
+                            <div class="div-meter">
+                                <div style="width: 90%;"> </div>
+                            </div>
+
+                            <h6 class="mt-3"> javaScript </h6>
+                            <span class="Rtl-Ltr"> 95% </span>
+                            <div class="div-meter">
+                                <div style="width: 95%;"> </div>
+                            </div>
+
+                            <h6 class="mt-3"> PHP </h6>
+                            <span class="Rtl-Ltr"> 85% </span>
+                            <div class="div-meter">
+                                <div style="width: 85%;"> </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--service / Services-->
+                <div class="service page-child" id="service">
+
+                    <div class="row">
+
+                        <h2> Services <b>Me</b> </h2>
+                        <div class="col-12 col-md-6">
+
+                            <div class="div-service mt-3">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <img src="photo/icon/icon-1.png" class="mw-100">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <h3> Programming </h3>
+                                        <p> Software and application development using the latest technologies, with a focus on high performance, system security, and standard, scalable code. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div-service mt-3">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <img src="photo/icon/icon-3.png" class="mw-100">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <h3> Web Design </h3>
+                                        <p> Creating modern, responsive websites that display beautifully on all devices (mobile, tablet, and desktop) and deliver an exceptional user experience. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <div class="div-service mt-3">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <img src="photo/icon/icon-4.png" class="mw-100">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <h3> Graphic Design </h3>
+                                        <p>High-precision graphic design and image editing, from creating visual elements for websites to preparing high-quality promotional images. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div-service mt-3">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <img src="photo/icon/icon-2.png" class="mw-100">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <h3> ui/ux </h3>
+                                        <p>Designing the user journey on websites (UX) and creating engaging user interfaces (UI). My goal is to help users reach their objectives on your website as easily and enjoyably as possible.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="row mt-5">
+<h2> Testimonials from <b>Clients</b> </h2>
+                        <div class="col-12 col-md-6 mt-5">
+
+                            <div class="div-opinion mt-3">
+                                <div class="div-suer-photo">
+                                    <img src="photo/users/user-1.jpg">
+                                    <span> Mohammad Azadi </span>
+                                </div>
+                                <p> What amazed me about working with him was his commitment and work discipline, combined with up-to-date knowledge. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-5">
+
+                            <div class="div-opinion mt-3">
+                                <div class="div-suer-photo">
+                                    <img src="photo/users/user-2.jpg">
+                                    <span> Amirhossein Sadeghi </span>
+                                </div>
+                                <p> In our website project, we faced complex technical challenges that previous developers had been unable to solve. With his scientific approach and technical perspective, he not only resolved the issues but also optimized the site structure for better SEO and performance. </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-12 col-md-6 mt-5">
+
+                            <div class="div-opinion mt-3">
+                                <div class="div-suer-photo">
+                                    <img src="photo/users/user-3.jpg">
+                                    <span> Reza Rashidi </span>
+                                </div>
+                                <p> Working with him was beyond our expectations. His deep understanding of UI/UX principles and ability to combine them with visual designs in Photoshop gave our website a modern and completely distinctive appearance. His creativity in providing visual solutions is truly impressive. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-5">
+
+                            <div class="div-opinion mt-3">
+                                <div class="div-suer-photo">
+                                    <img src="photo/users/user-4.jpg">
+                                    <span> Saeed Naghibi </span>
+                                </div>
+                                <p> Working with a meticulous and responsible specialist gave us great peace of mind. </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--project / Portfolio-->
+                <div class="project page-child" id="project">
+
+                    <h2> Portfolio <b>Works</b> </h2>
+                    <p> Here, we take a look at some of my portfolio projects... </p>
+                    <div class="row mt-4 mw-100 m-auto">
+
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-programmer">
+                            <img src="photo/progect/programmer/programmer-1.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Programming </span>
+                            <p> Project Name : ... </p>
+                        </div>
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-programmer">
+                            <img src="photo/progect/programmer/programmer-1.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Programming </span>
+                            <p> Project Name : ... </p>
+                        </div>
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-programmer">
+                            <img src="photo/progect/programmer/programmer-1.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Programming </span>
+                            <p> Project Name : ... </p>
+                        </div>
+
+                    </div>
+
+                    <div class="row mw-100 m-auto">
+
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-site">
+                            <img src="photo/progect/design website/design-website.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Web Design </span>
+                            <p> Project Name : ... </p>
+                        </div>
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-site">
+                            <img src="photo/progect/design website/design-website.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Web Design </span>
+                            <p> Project Name : ... </p>
+                        </div>
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-site">
+                            <img src="photo/progect/design website/design-website.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Web Design </span>
+                            <p> Project Name : ... </p>
+                        </div>
+
+                    </div>
+
+                    <div class="row mw-100 m-auto">
+
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-graphic">
+                            <img src="photo/progect/graphic/graphic.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Graphic Design </span>
+                            <p> Project Name : ... </p>
+                        </div>
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-graphic">
+                            <img src="photo/progect/graphic/graphic.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Graphic Design </span>
+                            <p> Project Name : ... </p>
+                        </div>
+                        <div class="col-12 col-md project-div m-auto mb-3 m-md-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-graphic">
+                            <img src="photo/progect/graphic/graphic.jpg" class="mw-100" alt="project">
+                            <div></div>
+                            <span> Graphic Design </span>
+                            <p> Project Name : ... </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Modal-programmer -->
+                    <div class="modal fade" id="exampleModal-programmer" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Project Name : ...</h1>
+                                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-5">
+
+                                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                class="swiper mySwiper2-project">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                            <div thumbsSlider="" class="swiper mySwiper-project">
+                                                <div class="swiper-wrapper mt-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/programmer/programmer-1.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-7">
+                                            <h3 class="mt-3 mt-md-0"> Description <b>Project</b> </h3>
+                                            <ul>
+<li class="mt-4"> Author: <span> Mohammad Rahmani </span> </li>
+                                                <li class="mt-3"> Project Start Date: <span> 1402/4/28 </span> </li>
+                                                <li class="mt-3"> Project End Date: <span> 1402/5/28 </span> </li>
+                                                <li class="mt-3"> Project Link: <span> <a href="#"> www.site.com </a>
+                                                    </span> </li>
+                                                <li class="mt-3"> Additional Details: <span> Lorem ipsum is placeholder text commonly used in the printing and typesetting industry.
+                                                         It has been used as standard dummy text by graphic designers and publishers for centuries.
+                                                         This sample content represents placeholder copy for the project description.
+                                                         It can be replaced with the actual project details, features, and other relevant information.
+
+
+
+
+
+
+
+
+
+                                                         </span> </li>
+                                                <button class="mt-5"> Contact Us </button>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <a href="#"><button type="button">Share</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal-site -->
+                    <div class="modal fade" id="exampleModal-site" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Project Name : ...</h1>
+                                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-5">
+
+                                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                class="swiper mySwiper2-project">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                            <div thumbsSlider="" class="swiper mySwiper-project">
+                                                <div class="swiper-wrapper mt-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/design website/design-website.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-7">
+                                            <h3 class="mt-3 mt-md-0"> Description <b>Project</b> </h3>
+                                            <ul>
+<li class="mt-4"> Designer: <span> Mohammad Rahmani </span> </li>
+                                                <li class="mt-3"> Project Start Date: <span> 1402/4/28 </span> </li>
+                                                <li class="mt-3"> Project End Date: <span> 1402/5/28 </span> </li>
+                                                <li class="mt-3"> Project Link: <span> <a href="#"> www.site.com </a>
+                                                    </span> </li>
+                                                <li class="mt-3"> Additional Details: <span> Lorem ipsum is placeholder text commonly used in the printing and typesetting industry.
+                                                         It has been used as standard dummy text by graphic designers and publishers for centuries.
+                                                         This sample content represents placeholder copy for the project description.
+                                                         It can be replaced with the actual project details, features, and other relevant information.
+
+
+
+
+
+
+
+
+
+                                                         </span> </li>
+                                                <button class="mt-5"> Contact Us </button>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <a href="#"><button type="button">Share</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal-graphic -->
+                    <div class="modal fade" id="exampleModal-graphic" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Project Name : ...</h1>
+                                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-5">
+
+                                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                class="swiper mySwiper2-project">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                            <div thumbsSlider="" class="swiper mySwiper-project">
+                                                <div class="swiper-wrapper mt-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="photo/progect/graphic/graphic.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-7">
+                                            <h3 class="mt-3 mt-md-0"> Description <b>Project</b> </h3>
+                                            <ul>
+<li class="mt-4"> Designer: <span> Mohammad Rahmani </span> </li>
+                                                <li class="mt-3"> Project Start Date: <span> 1402/4/28 </span> </li>
+                                                <li class="mt-3"> Project End Date: <span> 1402/5/28 </span> </li>
+                                                <li class="mt-3"> Project Link: <span> <a href="#"> www.site.com </a>
+                                                    </span> </li>
+                                                <li class="mt-3"> Additional Details: <span> Lorem ipsum is placeholder text commonly used in the printing and typesetting industry.
+                                                         It has been used as standard dummy text by graphic designers and publishers for centuries.
+                                                         This sample content represents placeholder copy for the project description.
+                                                         It can be replaced with the actual project details, features, and other relevant information.
+
+
+
+
+
+
+
+
+
+                                                         </span> </li>
+                                                <button class="mt-5"> Contact Us </button>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <a href="#"><button type="button">Share</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!--blog / Articles-->
+                <div class="blog page-child" id="blog">
+
+                    <h2> Articles <b>Website</b> </h2>
+                    <p> For more information and programming-related knowledge, visit our website articles... </p>
+                    <div class="row mt-4 mw-100 m-auto">
+
+                        <div class="col-12 col-md blog-div mb-3 m-md-2">
+                            <div class="div-content">
+                                <a href="blog.html"> <img src="photo/blog/blog-1.jpg" class="mw-100" alt="blog"> </a>
+                                <span class="date"> December 19 </span>
+                                <div>
+                                    <a href="blog.html">
+                                        <h3> What is SEO? </h3>
+                                    </a>
+                                    <p> This is placeholder text used for demonstration purposes.
+                                         </p>
+                                    <span> No Comments </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md blog-div mb-3 m-md-2">
+                            <div class="div-content">
+                                <a href="blog.html"> <img src="photo/blog/blog-1.jpg" class="mw-100" alt="blog"> </a>
+                                <span class="date"> December 19 </span>
+                                <div>
+                                    <a href="blog.html">
+                                        <h3> Types of Artificial Intelligence </h3>
+                                    </a>
+                                    <p> This is placeholder text used for demonstration purposes.
+                                         </p>
+                                    <span> No Comments </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md blog-div mb-3 m-md-2">
+                            <div class="div-content">
+                                <a href="blog.html"> <img src="photo/blog/blog-1.jpg" class="mw-100" alt="blog"> </a>
+                                <span class="date"> December 19 </span>
+                                <div>
+                                    <a href="blog.html">
+                                        <h3> How long does SEO take? </h3>
+                                    </a>
+                                    <p> This is placeholder text used for demonstration purposes.
+                                         </p>
+                                    <span> No Comments </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mw-100 m-auto">
+
+                        <div class="col-12 col-md blog-div mb-3 m-md-2">
+                            <div class="div-content">
+                                <a href="blog.html"> <img src="photo/blog/blog-2.jpg" class="mw-100" alt="blog"> </a>
+                                <span class="date"> December 19 </span>
+                                <div>
+                                    <a href="blog.html">
+                                        <h3> Everything About Content Marketing </h3>
+                                    </a>
+                                    <p> This is placeholder text used for demonstration purposes.
+                                         </p>
+                                    <span> No Comments </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md blog-div mb-3 m-md-2">
+                            <div class="div-content">
+                                <a href="blog.html"> <img src="photo/blog/blog-2.jpg" class="mw-100" alt="blog"> </a>
+                                <span class="date"> December 19 </span>
+                                <div>
+                                    <a href="blog.html">
+                                        <h3> Introduction to Photoshop Tools </h3>
+                                    </a>
+                                    <p> This is placeholder text used for demonstration purposes.
+                                         </p>
+                                    <span> No Comments </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md blog-div mb-3 m-md-2">
+                            <div class="div-content">
+                                <a href="blog.html"> <img src="photo/blog/blog-2.jpg" class="mw-100" alt="blog"> </a>
+                                <span class="date"> December 19 </span>
+                                <div>
+                                    <a href="blog.html">
+                                        <h3> How to Install Corel </h3>
+                                    </a>
+                                    <p> This is placeholder text used for demonstration purposes.
+                                         </p>
+                                    <span> No Comments </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- call / Contact Us -->
+                <div class="call page-child" id="call">
+                    <div class="row">
+<h2> Contact <b> Me </b> </h2>
+
+                        <div class="col-12 col-md-6 div-call-form mt-2">
+                            <form>
+                                <input type="text" placeholder="Full Name">
+                                <br>
+                                <input type="number" placeholder="Phone Number">
+                                <br>
+                                <textarea> Hello, and I hope you're doing well... </textarea>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2 div-call-list">
+                            <ul>
+                                <li>
+                                    Phone Number: <span> 09121234567 </span>
+                                </li>
+                                <li>
+                                    Location: <span> Qazvin , District3</span>
+                                </li>
+                                <li>
+                                    Email: <span> information@example.com </span>
+                                </li>
+                                <li>
+                                    Website: <span> soh5587/github.io/arsam,s-site </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-2 div-blog-submit">
+                        <div class="col">
+                            <button type="submit"> Send Message </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----sidebar-mobile / Sidebar---->
+    
+
+
+    <div class="sidebar sidebar-mobile p-0 d-md-none">
+        <div class="div-sidebar-mobile">
+
+            <!--img / عکس-->
+            <div class="img-div mb-3">
+                <img src="photo/user.jpg" width="100%">
+            </div>
+
+            <!--navbar / نوار ناوبری-->
+            <div class="navbar-div mb-3">
+                <ul>
+
+                    <div class="d-flex div-menu active-menu" onclick="activePage('#about')">
+                        <i class="fa fa-user"></i>
+                        <li> About Me </li>
+                    </div>
+
+                    <div class="d-flex div-menu" onclick="activePage('#resume')">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <li> my resume </li>
+                    </div>
+
+                    <div class="d-flex div-menu" onclick="activePage('#service')">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <li> Services </li>
+                    </div>
+
+                    <div class="d-flex first-child-li div-menu" onclick="activePage('#call')">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <li> Contact Me </li>
+                    </div>
+
+                </ul>
+            </div>
+
+            <!----setting / تنظیمات---->
+            <div class="setting-div">
+
+                <ul>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="d-flex collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne">
+                            <div>
+                                <i class="fa fa-gear"></i>
+                            </div>
+                            <li> Settings </li>
+                            <i class="fa-solid fa-angle-down down-up-d"></i>
+                        </div>
+                    </div>
+
+                    <!--color / رنگ-->
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="d-flex accordion-body div-color">
+                            <li>
+                                <p> Color </p>
+                                <button class="button-color-style orange" value="orange"> </button>
+                                <button class="button-color-style pink" value="pink"> </button>
+                                <button class="button-color-style purple" value="purple"> </button>
+                                <button class="button-color-style gold" value="gold"> </button>
+                                <button class="button-color-style brown" value="brown"> </button>
+                                <button class="button-color-style red" value="red"> </button>
+                                <button class="button-color-style blue" value="blue"> </button>
+                                <button class="button-color-style green" value="green"> </button>
+                            </li>
+                        </div>
+
+                        <div class="d-flex accordion-body div-color">
+                            <li>
+                                <p> Color adjustment </p>
+                                <div class="d-flex mt-2 div-custom-color">
+                                    <p> main color </p>
+                                    <input type="color" oninput="getColorCodeOne(this.value)"
+                                        class="custom-color" id="custom-color-one-m">
+                                </div>
+                                <div class="d-flex mt-2 div-custom-color">
+                                    <p> secondary color </p>
+                                    <input type="color" oninput="getColorCodeTwo(this.value)"
+                                        class="custom-color" id="custom-color-two-m">
+                                </div>
+                            </li>
+                        </div>
+
+                        <!--font / فونت-->
+                        <div class="accordion-body div-color" style="border-bottom:none !important;">
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Title font
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item title" value="vazir"
+                                            style="font-family: Vazir !important;">
+                                            vazir </button></li>
+                                    <li><button class="dropdown-item title" value="Estedad"
+                                            style="font-family: Estedad !important;">
+                                            Estedad </button></li>
+                                    <li><button class="dropdown-item title" value="IranSans"
+                                            style="font-family: IranSans !important;"> IranSans </button></li>
+                                    <li><button class="dropdown-item title" value="Lalezar"
+                                            style="font-family: Lalezar !important;">
+                                            Lalezar </button></li>
+                                    <li><button class="dropdown-item title" value="titr"
+                                            style="font-family: titr !important;">
+                                            titr </button></li>
+                                    <li><button class="dropdown-item title" value="yekan"
+                                            style="font-family: Yekan !important;">
+                                            yekan </button></li>
+                                    <li><button class="dropdown-item title" value="Shabnam"
+                                            style="font-family: Shabnam !important;"> Shabnam </button></li>
+                                    <li><button class="dropdown-item title" value="Sahel"
+                                            style="font-family: Sahel !important;">
+                                            Sahel </button></li>
+                                    <li><button class="dropdown-item title" value="Tanha"
+                                            style="font-family: Tanha !important;">
+                                            Tanha </button></li>
+                                    <li><button class="dropdown-item title" value="Samim"
+                                            style="font-family: Samim !important;">
+                                            Samim </button></li>
+                                    <li><button class="dropdown-item title" value="Rezvan"
+                                            style="font-family: Rezvan !important;">
+                                            Rezvan </button></li>
+                                </ul>
+
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Text font
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item text" value="vazir"
+                                            style="font-family: Vazir !important;">
+                                            vazir </button></li>
+                                    <li><button class="dropdown-item text" value="Estedad"
+                                            style="font-family: Estedad !important;">
+                                            Estedad </button></li>
+                                    <li><button class="dropdown-item text" value="IranSans"
+                                            style="font-family: IranSans !important;"> IranSans </button></li>
+                                    <li><button class="dropdown-item text" value="Lalezar"
+                                            style="font-family: Lalezar !important;">
+                                            Lalezar </button></li>
+                                    <li><button class="dropdown-item text" value="titr"
+                                            style="font-family: titr !important;">
+                                            titr </button></li>
+                                    <li><button class="dropdown-item text" value="yekan"
+                                            style="font-family: Yekan !important;">
+                                            yekan </button></li>
+                                    <li><button class="dropdown-item text" value="Shabnam"
+                                            style="font-family: Shabnam !important;"> Shabnam </button></li>
+                                    <li><button class="dropdown-item text" value="Sahel"
+                                            style="font-family: Sahel !important;">
+                                            Sahel </button></li>
+                                    <li><button class="dropdown-item text" value="Tanha"
+                                            style="font-family: Tanha !important;">
+                                            Tanha </button></li>
+                                    <li><button class="dropdown-item text" value="Samim"
+                                            style="font-family: Samim !important;">
+                                            Samim </button></li>
+                                    <li><button class="dropdown-item text" value="Rezvan"
+                                            style="font-family: Rezvan !important;">
+                                            Rezvan </button></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                            <div class="accordion-body div-color" style="border-bottom:none;">
+                                <button class="reset-settings"> Reset settings </button>
+                            </div>
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+         <div class="button-sidebar-mobile button-sidebar-mobile-EN">
+            <a href="index.html"> <div class="language d-flex pb-2"> <i class="fa-solid fa-earth-americas RTL-E"></i> </div> </a>
+            
+            <a>
+              <div class="button-sidebar"> <i class="fa-solid fa-angles-left"></i> 
+                     <div class="icon-sidebar-mobile button-sidebar"></div>
+              </div>
+             </a>
+             
+            <a> <div class="div-night d-flex pt-2"> <i class="fa-solid fa-sun"></i> </div> </a>
+ 
+         </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+<!--jquery-->
+<script src="jquery/jquery-3.7.1.min.js"></script>
+<!--bootstrap js-->
+<script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+<!--fontawesome js-->
+<script src="fontawesome/js/all.min.js"></script>
+<!--script-->
+<script src="script.js"></script>
+<!--swiper js-->
+<script src="Swiperjs/swiper-bundle.min.js"></script>
+
+
+<script>
+    var swiper = document.querySelectorAll(".mySwiper-project").forEach(function (element) {
+        new Swiper(element, {
+            spaceBetween: 5,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+    });
+
+    var swiper2 = document.querySelectorAll(".mySwiper2-project").forEach(function (element) {
+        new Swiper(element, {
+            spaceBetween: 5,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    });
+
+</script>
+
+</html>
