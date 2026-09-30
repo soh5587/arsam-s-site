@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 
 <head>
 
@@ -19,7 +19,7 @@
 </head>
 
 
-<body dir="rtl">
+<body dir="ltr">
 
     <!--blog / صفحه داخلی مقالات-->
     <section>
@@ -27,51 +27,49 @@
 
             <div class="row">
                 <div class="col-12 div-img-blog">
-                    <img src="photo/blog/AI.PNG">
+                    <img src="photo/debog.jpg">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 div-blog-h1">
-                    <h1>چرا هوش مصنوعی تنها یک ابزار نیست</h1>
+                    <h1>Lessons Broken Code Taught Me</h1>
                     <div class="div-about-blog">
-                        <span> نویسنده: <span class="about-blog"> آرسام جبارزاده</span> |</span>
-                        <span> تاریخ: <span class="about-blog">1405/8/10</span> |</span>
+                        <span> Author: <span class="about-blog"> Arsam Jabbarzadeh</span> |</span>
+                        <span> Date: <span class="about-blog">1405/3/30</span> |</span>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2>چگونه چالش‌های فنی پروژه SkyGate را حل کردیم؟</h2>
+                    <h2>What Did I Do When Projects Refused to Run?</h2>
                     <p>
-دنیای برنامه‌نویسی با سرعتی باورنکردنی در حال تحول است. تا چند سال پیش، دغدغه اصلی یک توسعه‌دهنده صرفاً نوشتن کدهای استاندارد، بالا بردن سرعت بارگذاری صفحات و طراحی رابط کاربری چشم‌نواز بود. اما امروز یک واقعیت شفاف پیش روی همه ما قرار دارد: وب‌سایت‌ها و نرم‌افزارهای فردا بدون هوش مصنوعی (AI)، محصولاتی ناقص و ایستا خواهند بود.
-خیلی‌ها هنوز به هوش مصنوعی به چشم یک «چت‌بات ساده» یا یک «دستیار کدنویسی» نگاه می‌کنند؛ اما از نگاه من، AI یک تغییر پارادایم کامل در مهندسی نرم‌افزار است.
+On social media and resumes, the programming universe looks like an endless highlight reel of victories, medals, and pristine deployments. But reality tells a different story: 90% of a developer's time is spent wrestling with code that doesn't work!
+Along my journey designing projects like the financial simulator, the SkyGate platform, and various production apps, I lost count of how many times the browser screen went completely blank, database queries threw cryptic errors, or a single rogue CSS rule destroyed an entire front-end layout.
 
-از سیستم‌های واکنشی تا نرم‌افزارهای پیش‌بین
-نرم‌افزارهای سنتی مثل یک ماشین حساب عمل می‌کنند؛ اگر ورودی 
-A
-A
- را به آن‌ها بدهید، همیشه خروجی 
-B
-B
- را تولید می‌کنند (یک فرآیند کامپوننت‌محور و واکنشی). اما با ورود یادگیری ماشین و الگوریتم‌های هوشمند، ما وارد عصر «نرم‌افزارهای پیش‌بین و تطبیق‌پذیر» شده‌ایم:
-سیستمی که رفتار و ترجیحات هر کاربر را در زمان واقعی درک می‌کند.
-وب‌سایتی که رابط کاربری‌اش را بر اساس نیاز لحظه‌ای مخاطب بهینه‌سازی می‌کند.
-برنامه‌ای که پیش از رخ دادن باگ یا خطای پایگاه داده، الگوهای غیرعادی را شناسایی و اصلاح می‌کند.
-وقتی اولین چت‌بات خودم را با ابزارهایی مثل XAMPP و DBeaver پیاده‌سازی می‌کردم، این جرقه در ذهنم روشن شد: نرم‌افزاری که نتواند زمینه (Context) و نیاز کاربر را تجزیه‌وتحلیل کند، خیلی زود منسوخ خواهد شد.
-چالش اصلی: هوش مصنوعی جایگزین برنامه‌نویس یا بال پرواز او؟
-همیشه این سوال مطرح می‌شود که: «آیا AI جای برنامه‌نویسان را می‌گیرد؟»
-پاسخ من یک نه قاطع است؛ اما برنامه‌نویسانی که بلدند با هوش مصنوعی فکر کنند، قطعاً جای برنامه‌نویسانی را خواهند گرفت که هنوز در گذشته مانده‌اند.
+Early on, these failures can demoralize anyone. Over time, however, I discovered that the most vital engineering skill is not "writing flawless code on the first try," but rather "the art of debugging and refusing to quit." In this article, I share 4 key lessons broken code taught me:
 
-برای من، کار با هوش مصنوعی یعنی:
+1. Errors Are Not Enemies; They Are Your Best Guides
+My biggest early mistake was panicking whenever a glaring red error showed up in the browser console or terminal.
+The Mindset Shift: I learned that an error message is simply the system’s most precise diagnostic report. Reading the Stack Trace line by line, inspecting the exact file line number, and tracking logs across VS Code or database queries in DBeaver almost always points directly to the overlooked flaw.
 
-شتاب در حل مسئله: به جای صرف ساعت‌ها برای کارهای تکراری (Boilerplate code)، تمرکز روی منطق کسب‌وکار، امنیت و معماری سیستم.
-شخصی‌سازی نامحدود: ساخت محصولاتی که برای تک‌تک کاربران احساسِ اختصاصی بودن ایجاد می‌کنند.
-تحلیل کلان‌داده‌ها: تبدیل انبوه داده‌های خام ذخیره‌شده در دیتابیس به بینش‌های معنادار و کاربردی.
-قدم‌های بعدی من در مرز هوش مصنوعی
-بعد از تجربیات موفقی که با پروژه‌های مختلف در مسابقات سوئیس و آمریکا داشتیم، تصمیم گرفتم انرژی و تمرکز اصلی‌ام را روی تقاطع «توسعه وب مدرن» و «سیستم‌های مبتنی بر یادگیری ماشین» بگذارم.
-هدف بعدی من ساخت مدل‌ها و راهکارهایی است که در مسابقات آینده حوزه AI در سطح جهانی رقابت کنند؛ سیستم‌هایی که صرفاً زیبا نیستند، بلکه فکر می‌کنند، یاد می‌گیرند و مسائل واقعی دنیای امروز را به صورت خودکار حل می‌کنند.
+2. The Divide and Conquer Technique
+When a complex project—such as a real-time financial ledger or an interactive tourism portal—runs into trouble, hunting down the root cause feels like looking for a needle in a haystack.
+Actionable Tactic: When this happens, I isolate the entire stack layer by layer:
+- Is data received properly from the database? (Tested via direct query)
+- Does the handler function return the expected payload? (Verified via breakpoints and logs)
+- Is the issue lurking in rendering logic or responsive layouts?
+Breaking down one massive headache into ten small checkpoints always forces the bug into the open.
 
-آینده متعلق به کسانی نیست که از تغییرات شگفت‌زده می‌شوند؛ متعلق به کسانی است که آستین‌ها را بالا می‌زنند و همین امروز آن را با کدها و الگوریتم‌هایشان می‌سازند.
+3. The Power of Git and Rolling Back to Safety
+Nothing feels more terrifying than tweaking code an hour before an international demo or project deadline, only to watch the whole system fall apart!
+This was where I truly grasped the life-saving value of Git and disciplined commits. Once I started saving clean, atomic commits with clear messages after every working step, the fear of experimenting disappeared. Even if everything blew up, a single command brought me straight back to the last stable state.
+
+4. The Reset Rule: Stepping Away From the Screen
+Countless times I sat staring at a loop or function for 3 straight hours, unable to figure out why it returned unexpected values. Yet after a short walk, a stretch, or a glass of water, the very second I glanced back at the monitor, the bug was obvious—usually a tiny typo or a misplaced variable! An exhausted mind simply cannot see obvious flaws.
+
+Final Words: Failure Means Growth
+The gold medals in the USA and Switzerland did not fall from the sky. They were forged through thousands of broken builds that I patiently analyzed, disassembled, and resolved.
+If your code isn't working today, celebrate: you are standing at the exact threshold where real learning happens and you emerge sharper than yesterday.
                     </p>
                 </div>
             </div>
@@ -99,7 +97,7 @@ B
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="d-flex accordion-body div-color">
                         <li>
-                            <p> رنگ </p>
+                            <p> Color </p>
                             <button class="button-color-style orange" value="orange"> </button>
                             <button class="button-color-style pink" value="pink"> </button>
                             <button class="button-color-style purple" value="purple"> </button>
@@ -113,13 +111,13 @@ B
 
                     <div class="d-flex accordion-body div-color">
                         <li>
-                            <p> تنظیم دستی رنگ </p>
+                            <p> Manual Color Setting </p>
                             <div class="d-flex mt-2 div-custom-color">
-                                <p> رنگ اصلی </p>
+                                <p> Primary Color </p>
                                 <input type="color" oninput="getColorCodeOne(this.value)" class="custom-color" id="custom-color-one-d">
                             </div>
                             <div class="d-flex mt-2 div-custom-color">
-                                <p> رنگ فرعی </p>
+                                <p> Secondary Color </p>
                                 <input type="color" oninput="getColorCodeTwo(this.value)" class="custom-color" id="custom-color-two-d">
                             </div>
                         </li>
@@ -131,79 +129,79 @@ B
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                فونت عنوان
+                                Title Font
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end menu-font-blog">
                                 <li><button class="dropdown-item title" value="vazir"
                                         style="font-family: Vazir !important;">
-                                        وزیر </button></li>
+                                        Vazir </button></li>
                                 <li><button class="dropdown-item title" value="Estedad"
                                             style="font-family: Estedad !important;">
-                                        استعداد </button></li>
+                                        Estedad </button></li>
             
                                 <li><button class="dropdown-item title" value="IranSans"
-                                        style="font-family: IranSans !important;"> ایران سنس </button></li>
+                                        style="font-family: IranSans !important;"> IranSans </button></li>
                                 <li><button class="dropdown-item title" value="Lalezar"
                                         style="font-family: Lalezar !important;">
-                                        لاله زار </button></li>
+                                        Lalezar </button></li>
                                 <li><button class="dropdown-item title" value="titr"
                                         style="font-family: titr !important;">
-                                        تیتر </button></li>
+                                        Titr </button></li>
                                 <li><button class="dropdown-item title" value="yekan"
                                         style="font-family: Yekan !important;">
-                                        یکان </button></li>
+                                        Yekan </button></li>
                                 <li><button class="dropdown-item title" value="Shabnam"
-                                        style="font-family: Shabnam !important;"> شبنم </button></li>
+                                        style="font-family: Shabnam !important;"> Shabnam </button></li>
                                 <li><button class="dropdown-item title" value="Sahel"
                                         style="font-family: Sahel !important;">
-                                        ساحل </button></li>
+                                        Sahel </button></li>
                                 <li><button class="dropdown-item title" value="Tanha"
                                         style="font-family: Tanha !important;">
-                                        تنها </button></li>
+                                        Tanha </button></li>
                                 <li><button class="dropdown-item title" value="Samim"
                                         style="font-family: Samim !important;">
-                                        صمیم </button></li>
+                                        Samim </button></li>
                                 <li><button class="dropdown-item title" value="Rezvan"
                                         style="font-family: Rezvan !important;">
-                                        رضوان </button></li>
+                                        Rezvan </button></li>
                             </ul>
 
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                فونت متن
+                                Text Font
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end menu-font-blog">
                                 <li><button class="dropdown-item text" value="vazir"
                                         style="font-family: Vazir !important;">
-                                        وزیر </button></li>
+                                        Vazir </button></li>
                                 <li><button class="dropdown-item text" value="Estedad"
                                         style="font-family: Estedad !important;">
-                                        استعداد </button></li>
+                                        Estedad </button></li>
                                 <li><button class="dropdown-item text" value="IranSans"
-                                        style="font-family: IranSans !important;"> ایران سنس </button></li>
+                                        style="font-family: IranSans !important;"> IranSans </button></li>
                                 <li><button class="dropdown-item text" value="Lalezar"
                                         style="font-family: Lalezar !important;">
-                                        لاله زار </button></li>
+                                        Lalezar </button></li>
                                 <li><button class="dropdown-item text" value="titr"
                                         style="font-family: titr !important;">
-                                        تیتر </button></li>
+                                        Titr </button></li>
                                 <li><button class="dropdown-item text" value="yekan"
                                         style="font-family: Yekan !important;">
-                                        یکان </button></li>
+                                        Yekan </button></li>
                                 <li><button class="dropdown-item text" value="Shabnam"
-                                        style="font-family: Shabnam !important;"> شبنم </button></li>
+                                        style="font-family: Shabnam !important;"> Shabnam </button></li>
                                 <li><button class="dropdown-item text" value="Sahel"
                                         style="font-family: Sahel !important;">
-                                        ساحل </button></li>
+                                        Sahel </button></li>
                                 <li><button class="dropdown-item text" value="Tanha"
                                         style="font-family: Tanha !important;">
-                                        تنها </button></li>
+                                        Tanha </button></li>
                                 <li><button class="dropdown-item text" value="Samim"
                                         style="font-family: Samim !important;">
-                                        صمیم </button></li>
+                                        Samim </button></li>
                                 <li><button class="dropdown-item text" value="Rezvan"
                                         style="font-family: Rezvan !important;">
-                                        رضوان </button></li>
+                                        Rezvan </button></li>
 
                             </ul>
 
@@ -220,13 +218,13 @@ B
                                 </div>
 
                                 <div class="p-1 language">
-                                    <a href="blog-EN.html"> <i class="fa-solid fa-earth-americas RTL-E"></i> </a>
+                                    <a href="blog5-EN.html"> <i class="fa-solid fa-earth-americas RTL-E"></i> </a>
                                 </div>
                             </div>
                         </li>
                     </div>
                     <div class="accordion-body div-color" style="border-bottom:none;">
-                        <button class="reset-settings"> بازنشانی تنظیمات </button>
+                        <button class="reset-settings"> Reset Settings </button>
                     </div>
 
                 </div>
@@ -234,8 +232,8 @@ B
         </div>
 
         <div class="home-page ">
-            <a href="index.html">
-                <span> صفحه اصلی </span>
+            <a href="index-EN.html">
+                <span> Home </span>
             </a>
         </div>
     </section>
